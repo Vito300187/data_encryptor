@@ -8,4 +8,4 @@
 - Лицензия:N/A
 - Как запустить программу: input terminal -> ruby data_encryptor.rb
 
-[Работа программы](https://github.com/Vito300187/data_encryptor/raw/master/giphy.gif)
+![Работа программы](https://github.com/Vito300187/data_encryptor/raw/master/giphy.gif)
