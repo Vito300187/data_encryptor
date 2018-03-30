@@ -9,13 +9,16 @@ message = gets.to_s #сохраняем переменную со словом �
 puts "Каким методом зашифровать?"
 puts "1) SHA1"
 puts "2) MD5"
+puts "3) SHA2"
 encryption_method = gets.chomp.to_s # сохраняем переменную с выбором шифрования
 
 # Выбор для шифрования через оператор if, если пользователь ввел значение 1 или либо метод шифрования
 if (encryption_method == "1" ) || (encryption_method == "SHA1")
   puts Digest::SHA1.hexdigest(message)
-else
+elsif (encryption_method == "2") || (encryption_method == "MD5")
   puts Digest::MD5.hexdigest(message)
+else
+  puts Digest::SHA2.hexdigest(message) 
 end
 
 puts "Данные успешно закодированы"
